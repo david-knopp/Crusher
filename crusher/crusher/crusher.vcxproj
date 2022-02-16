@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest|Win32">
+      <Configuration>UnitTest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="action_list\action.h" />
+    <ClInclude Include="action_list\action_list.h" />
+    <ClInclude Include="action_list\ease\ease_exp_in.h" />
+    <ClInclude Include="action_list\instant_action.h" />
+    <ClInclude Include="action_list\interval_action.h" />
+    <ClInclude Include="core\component.h" />
+    <ClInclude Include="core\component_template_bodies.h" />
+    <ClInclude Include="core\core.h" />
+    <ClInclude Include="core\core_template_bodies.h" />
+    <ClInclude Include="core\entity.h" />
+    <ClInclude Include="core\entity_template_bodies.h" />
+    <ClInclude Include="core\system.h" />
+    <ClInclude Include="filesystem\file_string.h" />
+    <ClInclude Include="filesystem\path.h" />
+    <ClInclude Include="graphics\camera\camera.h" />
+    <ClInclude Include="graphics\handle\handle.h" />
+    <ClInclude Include="graphics\lighting\light.h" />
+    <ClInclude Include="graphics\mesh\mesh_renderer.h" />
+    <ClInclude Include="graphics\mesh\obj_loader.h" />
+    <ClInclude Include="graphics\shader\shader_data.h" />
+    <ClInclude Include="graphics\shader\shader_program.h" />
+    <ClInclude Include="graphics\shader\shader_manager.h" />
+    <ClInclude Include="graphics\types\buffer_usage.h" />
+    <ClInclude Include="graphics\types\object_type.h" />
+    <ClInclude Include="graphics\mesh\mesh.h" />
+    <ClInclude Include="graphics\render_context\render_context.h" />
+    <ClInclude Include="graphics\types\shader_type.h" />
+    <ClInclude Include="graphics\vertex\vertex.h" />
+    <ClInclude Include="input\input_manager.h" />
+    <ClInclude Include="input\keycode.h" />
+    <ClInclude Include="math\quat.h" />
+    <ClInclude Include="math\random.h" />
+    <ClInclude Include="precompiled.h" />
+    <ClInclude Include="graphics\system\graphics_system.h" />
+    <ClInclude Include="graphics\window_manager\window_manager.h" />
+    <ClInclude Include="math\mat3.h" />
+    <ClInclude Include="math\mat4.h" />
+    <ClInclude Include="math\math.h" />
+    <ClInclude Include="math\vec2.h" />
+    <ClInclude Include="math\vec3.h" />
+    <ClInclude Include="math\vec4.h" />
+    <ClInclude Include="math\transform\transform3d.h" />
+    <ClInclude Include="utils\debug\assert.h" />
+    <ClInclude Include="utils\delegate\callback.h" />
+    <ClInclude Include="utils\delegate\delegate.h" />
+    <ClInclude Include="utils\delegate\member_function_callback.h" />
+    <ClInclude Include="utils\delegate\static_function_callback.h" />
+    <ClInclude Include="utils\signal\signal.h" />
+    <ClInclude Include="utils\time\timer.h" />
+    <ClInclude Include="utils\type\non_copyable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="action_list\action.cpp" />
+    <ClCompile Include="action_list\action_list.cpp" />
+    <ClCompile Include="action_list\ease\ease_exp_in.cpp" />
+    <ClCompile Include="action_list\instant_action.cpp" />
+    <ClCompile Include="action_list\interval_action.cpp" />
+    <ClCompile Include="core\component.cpp" />
+    <ClCompile Include="core\core.cpp" />
+    <ClCompile Include="core\entity.cpp" />
+    <ClCompile Include="core\system.cpp" />
+    <ClCompile Include="filesystem\file_string.cpp" />
+    <ClCompile Include="filesystem\path.cpp" />
+    <ClCompile Include="graphics\camera\camera.cpp" />
+    <ClCompile Include="graphics\handle\handle.cpp" />
+    <ClCompile Include="graphics\lighting\light.cpp" />
+    <ClCompile Include="graphics\mesh\mesh.cpp" />
+    <ClCompile Include="graphics\mesh\mesh_renderer.cpp" />
+    <ClCompile Include="graphics\mesh\obj_loader.cpp" />
+    <ClCompile Include="graphics\render_context\render_context.cpp" />
+    <ClCompile Include="graphics\shader\shader_data.cpp" />
+    <ClCompile Include="graphics\shader\shader_program.cpp" />
+    <ClCompile Include="graphics\shader\shader_manager.cpp" />
+    <ClCompile Include="graphics\vertex\vertex.cpp" />
+    <ClCompile Include="input\input_manager.cpp" />
+    <ClCompile Include="math\quat.cpp" />
+    <ClCompile Include="math\random.cpp" />
+    <ClCompile Include="precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="graphics\system\graphics_system.cpp" />
+    <ClCompile Include="graphics\window_manager\window_manager.cpp" />
+    <ClCompile Include="math\mat3.cpp" />
+    <ClCompile Include="math\mat4.cpp" />
+    <ClCompile Include="math\vec2.cpp" />
+    <ClCompile Include="math\vec3.cpp" />
+    <ClCompile Include="math\vec4.cpp" />
+    <ClCompile Include="math\transform\transform3d.cpp" />
+    <ClCompile Include="utils\debug\assert.cpp" />
+    <ClCompile Include="utils\time\timer.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B568DEF2-8968-4188-9B2A-7400DF88AF1C}</ProjectGuid>
+    <RootNamespace>crusher</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\libs\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\crusher\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\external\glfw\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\libs\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\crusher\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\external\glfw\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\libs\</OutDir>
+    <IntDir>$(SolutionDir)..\bin\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)\crusher\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\external\glfw\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>crusher/precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>crusher/precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\;$(SolutionDir)\..\external\glfw\include\;$(SolutionDir)\..\external\glew\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>crusher/precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
