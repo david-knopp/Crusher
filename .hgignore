@@ -1,9 +1,0 @@
-syntax: glob
-bin/**
-Release/**
-Debug/**
-ipch/**
-*.orig
-*.suo
-*.sdf
-*.opensdf
